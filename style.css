@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Open+Sans:wght@600&family=Source+Code+Pro:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+html,
+body{
+/* line-height: 1.4; */
+font-weight: 300;
+}
+
+.hero_section{
+    background-image: url(images/Korosi-2.jpg);
+
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text_container{
+    color: white;
+    margin-top:  0 ;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:  64px;
+    padding-left: 60px;
+
+}
+
+.lg_text{
+    font-size: 72px;
+}
+
+.md_text{
+    font-size: 38px;
+}
+
+
+.black_box{
+    background-color: black;
+    padding: 20px;
+}
+
+.black_box h2{
+    font-weight: 200px;
+    font-size: 55px;
+    color: white;
+    text-align: center;
+}
+
+.work{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-bottom: 20px;
+
+}
+
+.grid_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    max-width: 320px;
+    height: 450px;
+    border-radius: 10px;
+    border: 2px;
+    box-shadow: 5px 2px 5px rgba(1, 1, 1, 0.2);
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.04);
+    box-shadow: 5px 2px 5px rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease-in-out;
+}
+
+
+
+.description{
+    padding: 20px;
+}
+
+.description h2{
+    margin-bottom: 10px;
+}
+.bottom_section{
+    display: flex;
+
+}
+
+.contact_me{
+    background-color: #515603;
+}
+.about_me{
+    background-color: #722300;
+}
+
+.contact_me, .about_me{
+    flex: 1;
+    min-height: 300px;
+    padding: 32px;
+    color: white;
+}
+
+.contact_me ul ,
+.about_me p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.contact_me h2 ,
+.about_me h2 {
+
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.footer{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+@media(max-width: 786px) {
+    .hero_section{
+        min-height: 100vh;
+
+    }
+
+    .text_container {
+       color: black;
+       border: 7px white;
+    }
+
+    .bottom_section{
+        flex-direction: column;
+    }
+
+   
+}
+
+
